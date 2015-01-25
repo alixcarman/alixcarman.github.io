@@ -1,0 +1,13 @@
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+.main-header {
+	background: url("../img/flowers.jpg") center;
+	background-size: cover;
+	color: #fff;
+}
