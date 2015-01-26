@@ -42,6 +42,11 @@ h3 {
 	/*padding: .7em;*/
 }
 
+.job-title {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
 .skillsets {
 	padding-top: 1em;
 }
