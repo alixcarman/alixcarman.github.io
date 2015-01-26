@@ -1,5 +1,6 @@
 
 h1 {
+	padding-top: 1em;
 	text-align: center;
 	font-family: "Pacifico", cursive;
 	font-size: 5em;
@@ -18,10 +19,12 @@ h3 {
 }
 
 .main-header {
-	padding: 8em 20px;
-	background: url("../img/flowers.jpg") no-repeat center;
+	background-color: #0000E0;
+	height: 20em;
+	background: url("../img/flowers.jpg") no-repeat 40%;
 	background-size: 100%;
-	line-height: 0.9
+	line-height: 0.9;
+	margin: 0;
 }
 
 .introduction {
@@ -45,6 +48,13 @@ h3 {
 .job-title {
 	font-weight: bold;
 	text-transform: uppercase;
+	/*display: inline-block;*/
+	display: block;
+}
+
+.job-description {
+	/*display: inline-block;*/
+	display: block;
 }
 
 .skillsets {
