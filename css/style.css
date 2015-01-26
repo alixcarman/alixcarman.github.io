@@ -75,6 +75,8 @@ h3 {
 .photographer, .PLUS, .Ireland, .workforce, .library {
 	width: 46.5%;
 	float: left;
+	padding-left: 8em;
+	background-color: red;
 }
 
 .photographer-description, .PLUS-description, .workforce-description, .library-description {
