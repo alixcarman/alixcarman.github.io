@@ -23,6 +23,9 @@ h3 {
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
 }
 
+* {
+  box-sizing: border-box;
+}
 
 /* ------------------ Class Selectors ------------------ */
 
@@ -60,17 +63,23 @@ h3 {
 .job-title {
 	font-weight: bold;
 	text-transform: uppercase;
-	/*display: inline-block;*/
-	display: block;
+/*	display: block;*/
 }
 
 .job-description {
-	/*display: inline-block;*/
-	display: block;
+/*	display: block;*/
 }
 
-.photographer {
-	background-color: red;
+/* ----- Floated Columns ----- */
+
+.photographer, .PLUS, .Ireland, .workforce, .library {
+	width: 46.5%;
+	float: left;
+}
+
+.photographer-description, .PLUS-description, .workforce-description, .library-description {
+	width: 46.5%;
+	float: right;
 }
 
 /* ----- Skillsets ----- */
