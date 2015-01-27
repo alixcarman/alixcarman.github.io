@@ -33,13 +33,19 @@ h3 {
 }*/
 
 /* ------------------ Class Selectors ------------------ */
+/*
+.main-page {
+	background-size: cover;
+}*/
 
 .main-header {
 	height: 30em;
 	background: linear-gradient(0deg, #fff, transparent 60%),
 				url("../img/pink.jpg") no-repeat center 35%;
-	background-size: cover;
+	background-size: 100%;
 	line-height: 1;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 .introduction {
