@@ -1,9 +1,41 @@
+/* ------------------ Global ------------------ */
+
+* {
+  box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+
+/* ------------------ Navigation ------------------ */
+
+	nav a:link {
+	  color: #981AFF;
+	  text-decoration: none;
+	}
+
+	nav a:visited {
+	  color: #5A23E8;
+	}
+
+	nav a:focus {
+	  background: orange;
+	}
+
+	nav a:hover {
+	  color: #18FF00;
+	  background: blue; 
+	}
+
+	nav a:active {
+	  background: red;
+	}
+}
 
 /* ------------------ Element Selectors ------------------ */
 
 h1 {
 	padding-top: .5em;
-	text-align: center;
 	font-family: "Pacifico", cursive;
 	font-size: 9em;
 	margin: 0;
@@ -13,7 +45,6 @@ h1 {
 }
 
 h3 {
-	text-align: center;
 	font-style: italic;
 	font-size: 2em;
 	font-family: "Amatic SC", cursive;
@@ -24,19 +55,7 @@ h3 {
 }
 
 
-* {
-  box-sizing: border-box;
-}
-
-/*footer {
-	background-color: red;
-}*/
-
 /* ------------------ Class Selectors ------------------ */
-/*
-.main-page {
-	background-size: cover;
-}*/
 
 .main-header {
 	height: 30em;
@@ -44,8 +63,7 @@ h3 {
 				url("../img/pink.jpg") no-repeat center 35%;
 	background-size: 100%;
 	line-height: 1;
-	margin-left: 0;
-	margin-right: 0;
+	text-align: center;
 }
 
 .introduction {
@@ -143,12 +161,4 @@ h3:hover {
 h2:hover {
 	color: #56ff00;
 }
-
-/*.skillsets:hover {
-	border-top: 5px solid #F731B5;
-}
-
-.education:hover {
-	border-bottom: 5px solid #F731B5;
-}*/
 
