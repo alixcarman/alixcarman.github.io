@@ -210,7 +210,13 @@ section {
 }
 
 /* Set Your Own Typography */
+body.style-tile {
+	font-family: 'Pontano Sans', sans-serif;	
+}
 
+body.style-tile h1 {
+	font-family: "Pacifico", cursive;
+}
 
 /* Set Your Own Margin & Padding */
 h2, h3, p {
@@ -219,5 +225,13 @@ h2, h3, p {
 
 /* Clearfix - Oo Not Remove */
 .clearfix {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+
+/* Color Pallette */
+.style-tile .color-1 {
+	background: #F731B5;
+}
+.style-tile .color-2 {
+	background: #56ff00;
+}
 
 
