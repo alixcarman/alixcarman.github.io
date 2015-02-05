@@ -6,6 +6,7 @@
 
 body {
 	margin: 0;
+	font-family: "Arimo", sans-serif;
 }
 
 /* ------------------ Navigation ------------------ */
@@ -56,7 +57,7 @@ body {
 
 /* ------------------ Element Selectors ------------------ */
 
-header h1 {
+.main-header h1 {
 	padding-top: .5em;
 	font-family: "Pacifico", cursive;
 	font-size: 9em;
@@ -66,7 +67,7 @@ header h1 {
 	text-shadow: 0 2px 2px rgba(0,0,0,.6);
 }
 
-header h3 {
+.main-header h3 {
 	font-style: italic;
 	font-size: 2em;
 	font-family: "Amatic SC", cursive;
@@ -175,11 +176,11 @@ ul {
 
 /* ------------------ Interactive ------------------ */
 
-h1:hover {
+.main-header h1:hover {
 	text-shadow: 0 2px 2px #000;
 }
 
-h3:hover {
+.main-header h3:hover {
 	color: #56ff00;
 }
 
@@ -205,25 +206,56 @@ section {
 	border: 1px solid #000;
 	float: left;
 	margin: 0 10px;
-	height: 50px;
-	width: 50px;
+	height: 100px;
+	width: 100px;;
+}
+
+.color-1, .color-2 {
+	border: none;
 }
 
 /* Set Your Own Typography */
 body.style-tile {
-	font-family: 'Pontano Sans', sans-serif;	
+	font-family: 'Arimo', sans-serif;	
+	text-align: center;
 }
 
 body.style-tile h1 {
 	font-family: "Pacifico", cursive;
+	/*font-size: 9em;*/
+	color: #fff;
+	text-shadow: 0 2px 2px rgba(0,0,0,.6);
+	margin-bottom: 0px;
+}
+
+body.style-tile h1:hover {
+	text-shadow: 0 2px 2px #000;
+}
+
+body.style-tile h2 {
+	font-style: italic;
+/*	font-size: 2em;*/
+	font-family: "Amatic SC", cursive;
+	letter-spacing: 5px;
+	color: #000;
+	text-shadow: 0 1px 1px rgba(0,0,0,.7);
+	margin-bottom: 0;
+}
+
+body.style-tile h2:hover {
+	color: #56ff00;
+}
+
+body.style-tile p {
+	margin-top: 0;
 }
 
 /* Set Your Own Margin & Padding */
 h2, h3, p {
-	margin: 0;
+	margin: 1;
 }
 
-/* Clearfix - Oo Not Remove */
+/* Clearfix - Do Not Remove */
 .clearfix {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
 
 /* Color Pallette */
@@ -233,5 +265,26 @@ h2, h3, p {
 .style-tile .color-2 {
 	background: #56ff00;
 }
+
+.style-tile .pattern-1 {
+	background: url("../img/background/linen.png");
+}
+
+.style-tile .pattern-2 {
+	background: url("../img/background/45degree.png");
+}
+
+.style-tile .pattern-3 {
+	background: url("../img/background/grey.png");
+}
+
+.style-tile .color, .texture {
+	text-align: left;
+}
+
+
+
+
+
 
 
