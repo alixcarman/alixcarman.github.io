@@ -5,7 +5,7 @@
 }
 
 body {
-	margin: 0;
+	margin: auto;
 	font-family: "Arimo", sans-serif;
 }
 
@@ -88,7 +88,14 @@ body {
 	line-height: 1;
 	text-align: center;
 }
-/*Changed jpg file name*/
+
+.contact-header {
+	margin-bottom: 150px;
+}
+
+.typeform-widget {
+	padding: 40px;
+}
 
 .introduction {
 	font-family: "Patrick Hand SC", cursive;
@@ -143,6 +150,10 @@ body {
 ul {
   text-indent: -22px ;
   list-style-type: none;
+}
+
+#type-form .form {
+	float: right;
 }
 
 
