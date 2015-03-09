@@ -69,7 +69,7 @@ a::after{
   text-align:center;
   transition:all .2s;
   -webkit-transform:  rotate(0deg);
-  
+  color: #F731B5;
 }
 
 a{
@@ -77,14 +77,15 @@ a{
   text-decoration: none;
   color: black;  
   font-family: oswald, sans-serif;
-  padding-left:.7em;
+  padding-left: 1.3em;
 }
 
 a:hover:after{
   -webkit-transform:  rotate(90deg);
   -webkit-animation: bounce .5s;
   transition: all .2s;
-
+  color: #56ff00;
+  margin-left: -.5em;
 }
 
 @-webkit-keyframes bounce{
@@ -115,6 +116,11 @@ nav li {
 
 }
 
+a:hover {
+	color: grey;
+	font-size: 1.3em;
+}
+
 
 /* ------------------ Element Selectors ------------------ */
 
@@ -138,6 +144,11 @@ nav li {
 	text-shadow: 0 1px 1px rgba(0,0,0,.7);
 }
 
+#style-tile {
+	border-top: 3px solid #F731B5;
+	margin-top: 8em;
+}
+
 
 /* ------------------ Class Selectors ------------------ */
 
@@ -156,6 +167,7 @@ nav li {
 
 .typeform-widget {
 	padding: 40px;
+	margin-top: 8em;
 }
 
 .introduction {
