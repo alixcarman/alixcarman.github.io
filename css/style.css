@@ -149,20 +149,20 @@ a:hover {
 
 .gallery-wrapper{
   max-width:1050px;
-  height:400px;
-  display:table-row-container;
+  height:500px;
+  display: table-row-container;
   margin: 20px auto;
   border-radius:7px;
   overflow: hidden;
-  border: solid black;
+/*  border: solid black;*/
   border-width:1px 1px 1px 0px;
 }
 
 .gallery-item{
   display:table-cell;
-  border:solid black;
+/*  border:solid black;*/
   width:1%;
-  height:400px;
+  height:500px;
   border-width: 0px 0px 0px 1px;
   transition: all 0.1s linear 0s;
   font-size: 40px;
