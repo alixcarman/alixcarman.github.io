@@ -11,55 +11,6 @@ body {
 
 /* ------------------ Navigation ------------------ */
 
-/*	nav a:link {
-	  color: #981AFF;
-	  text-decoration: none;
-	}
-
-	nav a:visited {
-	  color: #5A23E8;
-	}
-
-	nav a:focus {
-	  background: orange;
-	}
-
-	nav a:hover {
-	  color: #18FF00;
-	  background: blue; 
-	}
-
-	nav a:active {
-	  background: red;
-	}
-
-	nav {
-	  text-align: center;
-	  padding: 10px 0;
-	  margin: 20px 0 0;
-	  background-color: black;
-	}
-
-	nav ul {
-	  list-style: none;
-	  margin: 0 10px;
-	  padding: 0;
-	}
-
-	nav li {
-	  display: inline-block;
-	}
-
-	nav a {
-	  font-weight: 800;
-	  padding: 5px 50px;
-	}*/
-
-/**, * {
-  margin: 0;
-  padding: 0;
-}*/
-
 a::after{
   content:">";
   display:inline-block;
@@ -122,7 +73,7 @@ a:hover {
 }
 
 
-/* ------------------ Element Selectors ------------------ */
+/* ------------------ Header ------------------ */
 
 .main-header h1 {
 	padding-top: .5em;
@@ -143,12 +94,6 @@ a:hover {
 	color: #000;
 	text-shadow: 0 1px 1px rgba(0,0,0,.7);
 }
-
-#style-tile {
-	border-top: 3px solid #F731B5;
-	margin-top: 8em;
-}
-
 
 /* ------------------ Class Selectors ------------------ */
 
@@ -200,6 +145,102 @@ a:hover {
 	margin-top: 1.5em;
 }
 
+/* ------------------ Home Page Gallery ------------------ */
+
+.gallery-wrapper{
+  max-width:1050px;
+  height:400px;
+  display:table-row-container;
+  margin: 20px auto;
+  border-radius:7px;
+  overflow: hidden;
+  border: solid black;
+  border-width:1px 1px 1px 0px;
+}
+
+.gallery-item{
+  display:table-cell;
+  border:solid black;
+  width:1%;
+  height:400px;
+  border-width: 0px 0px 0px 1px;
+  transition: all 0.1s linear 0s;
+  font-size: 40px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.gallery-item:hover{
+  width:18%;
+  /* transition: width 0.2s linear 0s; */
+}
+
+.hidden{
+  display:none;
+}
+
+.filter-wrapper{
+  height:20px;
+  line-height:20px;
+  margin:0 auto;
+  width: 400px;
+  display: table-row-container;
+  text-align:center;
+  margin-top: 8em;
+}
+
+.filter-item{
+  display:table-cell;
+  width:1%;
+  float:auto;
+  border:solid grey;
+  border-width: 1px 1px 1px 0;
+  font-size: 14px;
+  transition: width 0.1s linear 0s;
+}
+
+.filter-item:first-child{
+  border-width: 1px;
+  border-radius: 20px 0 0 20px;
+}
+
+.filter-item:last-child{
+  border-radius: 0 20px 20px 0;
+}
+
+.filter-item:hover{
+  background:grey;
+  width:2%;
+}
+
+#all:checked ~ .filter-wrapper > [for='all']{
+  width:2%;
+  background:black;
+  color:white;
+}
+
+#designs:checked ~ .filter-wrapper > [for='designs']{
+  width:2%;
+    background:black;
+  color:white;
+}
+
+#photogs:checked ~ .filter-wrapper > [for='photogs']{
+  width:2%;
+    background:black;
+  color:white;
+}
+
+#designs:checked ~ .gallery-wrapper > :not([data-tag='design']){
+  display:none;
+}
+
+#photogs:checked ~ .gallery-wrapper > :not([data-tag='photog']){
+  display:none;
+}
+
+/* ------------------ Bio ------------------ */
+
 /* ----- Work Experience ----- */
 
 #container {
@@ -242,10 +283,6 @@ ul {
 	clear: both;
 	border-bottom: 1.6em solid #F731B5;
 	padding-bottom: 40px;
-/*	background: linear-gradient(to bottom, #fff, transparent 30%),
-				#F731B5;
-	background-size: cover; */
-				
 }
 
 .skillsets h2 {
@@ -274,6 +311,11 @@ h2:hover {
 }
 
 /* ------------------ Style Tile ------------------ */
+
+#style-tile {
+	border-top: 3px solid #F731B5;
+	margin-top: 8em;
+}
 
 section {
 	margin: 20px 0;
@@ -366,8 +408,6 @@ h2, h3, p {
 .style-tile .color, .texture {
 	text-align: left;
 }
-
-
 
 
 
