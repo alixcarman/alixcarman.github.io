@@ -111,8 +111,9 @@ a:hover {
 }
 
 .typeform-widget {
-	padding: 40px;
-	margin-top: 8em;
+	margin: auto;
+	margin-top: 10em;
+	text-align: center;
 }
 
 .introduction {
@@ -154,6 +155,7 @@ a:hover {
     display: block;
     margin: 0 auto;
     position: relative;
+    margin-top: 10em;
 }
 
 .slides * {
@@ -214,7 +216,7 @@ a:hover {
 
 input:checked + .slide-container  .slide {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1.2);
     transition: opacity 1s ease-in-out;
 }
 
